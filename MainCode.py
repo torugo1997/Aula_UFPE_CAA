@@ -17,25 +17,24 @@ from scipy.integrate import dblquad
 from PIL import Image
 
 def main():
-    #criando 3 colunas
     col1, col2, col3= st.columns(3)
-    foto = Image.open('randomen.png')
-    #st.sidebar.image("randomen.png", use_column_width=True)
-    #inserindo na coluna 2
-    col2.image(foto, use_column_width=True)
-    #O código abaixo centraliza e atribui cor
-    st.markdown("<h2 style='text-align: center; color: #306754;'>Hybrid Inspection and Age-Based Policy with Inspector Assignment</h2>", unsafe_allow_html=True)
+    foto = Image.open('ufpe.png')
+    col1.image(foto, use_column_width=True)
+    foto = Image.open('caa.jpg')
+    col3.image(foto, use_column_width=True)
+    
+    st.markdown("<h2 style='text-align: center; color: #306754;'>Avaliação Didática: </h2>", unsafe_allow_html=True)
     
     st.markdown("""
         <div style="background-color: #F3F3F3; padding: 10px; text-align: center;">
-          <p style="font-size: 20px; font-weight: bold;">A Delay-Time Model for Non-Periodic Inspection Intervals and Inspector Team Assignment</p>
-          <p style="font-size: 15px;">By: Victor H. R. Lima & Cristiano A. V. Cavalcante</p>
+          <p style="font-size: 20px; font-weight: bold;">Aplicação web para </p>
+          <p style="font-size: 15px;">By: Victor H. R. Lima</p>
         </div>
         """, unsafe_allow_html=True)
 
-    menu = ["Cost-rate", "Information", "Website"]
+    menu = ["Aplicação", "Informação"]
     
-    choice = st.sidebar.selectbox("Select here", menu)
+    choice = st.sidebar.selectbox("Selecione aqui", menu)
     
     if choice == menu[0]:
         st.header(menu[0])
