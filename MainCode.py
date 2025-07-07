@@ -348,24 +348,13 @@ def main():
             
     if choice == menu[1]:
         st.header(menu[1])
-        st.write("<h6 style='text-align: justify; color: Blue Jay;'>This app is dedicated to computing the cost rate for a hybrid inspection and age-based maintenance policy with inspector assignments. We assume a single system operating under Delay-Time Modeling (DTM) with two types of components, each having distinct defect arrival distributions. Component renovation occurs either after a failure (corrective maintenance) or during inspections, once a defect is detected or if the age-based threshold is reached (preventive maintenance). Inspectors vary in their costs (contracting fees and unitary costs for performing inspections) and their error rates (false positives and false negatives). This app emphasizes the importance of optimally selecting inspectors to minimize the cost-rate.</h6>", unsafe_allow_html=True)
-        st.write("<h6 style='text-align: justify; color: Blue Jay;'>The app computes the cost rate for a specific solution—defined by inspection intervals (Δ), inspector assignments (Y), and the age-based threshold (T).</h6>", unsafe_allow_html=True)
-        st.write("<h6 style='text-align: justify; color: Blue Jay;'>For further questions or information on finding the optimal solution, please contact one of the email addresses below.</h6>", unsafe_allow_html=True)
+        st.write("<h6 style='text-align: justify; color: Blue Jay;'>Essa aplicação web tem um propósito didático, a fim de tornar o processo de aprendizado um pouco mais ativo, do ponto de vista do aluno.</h6>", unsafe_allow_html=True)
         
         st.write('''
 
-v.h.r.lima@random.org.br
+victor.rlima@ufpe.br
 
-c.a.v.cavalcante@random.org.br
-
-''' .format(chr(948), chr(948), chr(948), chr(948), chr(948)))       
-    if choice==menu[2]:
-        st.header(menu[2])
-        
-        st.write('''The Research Group on Risk and Decision Analysis in Operations and Maintenance was created in 2012 
-                 in order to bring together different researchers who work in the following areas: risk, maintenance a
-                 nd operation modelling. Learn more about it through our website.''')
-        st.markdown('[Click here to be redirected to our website](https://sites.ufpe.br/random/#page-top)',False)        
+''' .format(chr(948), chr(948), chr(948), chr(948), chr(948)))               
 if st._is_running_with_streamlit:
     main()
 else:
