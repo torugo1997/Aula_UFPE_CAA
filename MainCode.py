@@ -19,7 +19,7 @@ from PIL import Image
 def main():
     col1, col2, col3= st.columns(3)
     foto = Image.open('ufpe.png')
-    col1.image(foto, width=100)
+    col1.image(foto, width=130)
     foto = Image.open('caa.jpg')
     col3.image(foto, use_column_width=True)
     
