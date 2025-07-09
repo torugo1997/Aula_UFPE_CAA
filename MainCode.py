@@ -40,9 +40,6 @@ if aba == "Teste de Dependência Linear":
         rank = np.linalg.matrix_rank(matriz)
         
         st.subheader("Resultado:")
-        st.write("Matriz formada pelos vetores como colunas:")
-        st.write(matriz)
-        st.write(f"Posto da matriz (rank): {rank}")
         
         if rank < num_vetores:
             st.error("Os vetores são linearmente dependentes.")
