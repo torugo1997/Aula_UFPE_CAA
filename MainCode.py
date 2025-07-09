@@ -23,11 +23,11 @@ def main():
     foto = Image.open('caa.jpg')
     col3.image(foto, use_column_width=True)
     
-    st.markdown("<h2 style='text-align: center; color: #306754;'>Avaliação Didática: </h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #306754;'>Avaliação Didática: Espaços vetoriais-Definição e propriedades</h2>", unsafe_allow_html=True)
     
     st.markdown("""
         <div style="background-color: #F3F3F3; padding: 10px; text-align: center;">
-          <p style="font-size: 20px; font-weight: bold;">Aplicação web para </p>
+          <p style="font-size: 20px; font-weight: bold;">Aplicação web para Teste de Dependência Linear e Mudança de Base</p>
           <p style="font-size: 15px;">By: Victor H. R. Lima</p>
         </div>
         """, unsafe_allow_html=True)
