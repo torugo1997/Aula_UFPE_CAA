@@ -32,7 +32,7 @@ def main():
         </div>
         """, unsafe_allow_html=True)
 
-    menu = ["Aplicação", "Informação"]
+    aba = st.sidebar.radio("Escolha o módulo", ["Teste de Dependência Linear", "Mudança de Base"])
     
     choice = st.sidebar.selectbox("Selecione aqui", menu)
     
