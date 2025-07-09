@@ -1,15 +1,15 @@
 import streamlit as st
 import numpy as np
 
-st.title("Espaços Vetoriais: Dependência Linear e Mudança de Base")
-
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("ufpe.png", use_column_width=True)
+    st.image("ufpe.png", width=200)
 
 with col2:
-    st.image("caa.jpg", use_column_width=True)
+    st.image("caa.jpg", width=200)
+
+st.title("Espaços Vetoriais: Dependência Linear e Mudança de Base")
 
 # Rodapé com seu nome
 st.markdown("<p style='text-align: center; font-size: 18px;'>Desenvolvido por: Victor H. R. Lima</p>", unsafe_allow_html=True)
